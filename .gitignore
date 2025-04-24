@@ -1,0 +1,30 @@
+## .NET Core
+bin/
+obj/
+*.user
+*.userosscache
+*.suo
+*.userprefs
+.vs/
+.vscode/
+
+## Images
+wwwroot/Images/*
+
+## App Settings
+**/appsettings.Development.json
+
+## Logs
+*.log
+
+## Cache files
+*.dll
+*.exe
+*.pdb
+
+## Package files
+packages/
+*.nupkg
+
+## Local configuration
+*.Development.json
