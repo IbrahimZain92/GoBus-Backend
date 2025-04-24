@@ -1,30 +1,39 @@
 # 🚌 GoBus Backend
+![.NET](https://img.shields.io/badge/.NET-7.0-blue)
 
-## 📝 نظرة عامة
-GoBus هو نظام خلفي (Backend) متكامل لإدارة حجوزات الحافلات، مبني باستخدام ASP.NET Core 7.0. يوفر النظام واجهة برمجة تطبيقات (API) قوية وآمنة لإدارة عمليات الحجز والدفع وإدارة المستخدمين.
+## 📝 Overview
+**GoBus** is a full-featured backend system for managing bus reservations, built with **ASP.NET Core 7.0**.  
+It provides a powerful and secure RESTful API for handling bookings, payments, and user management.
 
-## 🚀 المميزات الرئيسية
-- ✨ نظام مصادقة وتفويض متكامل
-- 💳 دعم المدفوعات الإلكترونية
-- 📊 إدارة متقدمة للحجوزات
-- 🔒 أمان عالي المستوى
-- 📱 واجهة API مرنة
-- 🔄 معالجة متزامنة وغير متزامنة
-- 📦 تخزين مؤقت للبيانات
+---
 
-## 🛠️ التقنيات المستخدمة
+## 🚀 Key Features
+- 🔐 Secure JWT Authentication and Authorization
+- 💳 Online payment integration with Stripe
+- 📆 Full booking management (create, update, cancel)
+- 📈 Admin dashboard and analytics (if applicable)
+- ⚙️ Hangfire support for scheduled background jobs
+- 🔄 Synchronous and asynchronous request handling
+- 🧠 In-memory caching for performance optimization
+- 🌐 Interactive API documentation with Swagger
+
+---
+
+## 🛠️ Tech Stack
 - ASP.NET Core 7.0
 - Entity Framework Core
-- Microsoft SQL Server
+- SQL Server
+- Stripe.NET
 - Hangfire
-- Stripe.net
-- Azure Services
+- Azure Services (Optional)
 - JWT Authentication
-- Swagger/OpenAPI
+- Swagger / OpenAPI
 
-## 🏗️ هيكل المشروع
-```csharp
+---
+
+## 🏗️ Project Structure
+```plaintext
 GoBye/
-├── GoBye.API/          # طبقة واجهة برمجة التطبيقات
-├── GoBye.BLL/          # طبقة منطق الأعمال
-└── GoBye.DAL/          # طبقة الوصول للبيانات
+├── GoBye.API/       → API layer (Endpoints & Controllers)
+├── GoBye.BLL/       → Business logic layer (Services & Managers)
+└── GoBye.DAL/       → Data access layer (Repositories & EF Context)
